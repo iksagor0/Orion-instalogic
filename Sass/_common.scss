@@ -1,0 +1,150 @@
+/*==============================
+        COMMON CODE
+ ==============================*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: $roboto;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+section,
+header,
+footer {
+    width: 100%;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    font-family: $roboto;
+    color: $primaryColor;
+    transition: 0.3s;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+button,
+button:focus,
+input,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+p {
+    font-family: $mulish;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: $txtBlack;
+}
+
+//  ========== COMMON CLASSES ==========
+.container {
+    max-width: 1200px;
+    width: 98%;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1550px) {
+    .container {
+        max-width: 80%;
+    }
+}
+// Common Button
+.btn {
+    display: inline-block;
+    font-family: $mulish;
+    font-weight: 500;
+    font-size: 2rem;
+    background: $primaryColor;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 0 5px $primaryColor, 0 0 25px $primaryColor,
+            0 0 50px $primaryColor;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+// Common Header
+.black-header {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3rem;
+    color: $txtBlackHeader;
+}
+
+// DOUBLE BUTTON
+.double-btn {
+    background: $primaryColor;
+    display: inline-block;
+    padding: 0.5rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+
+    .btn {
+        transition: 0.3s;
+        animation: none;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #000, 0 0 25px $primaryColor, 0 0 50px #000;
+    }
+
+    .white-btn {
+        padding: 1rem;
+        margin: 0.5rem;
+        background: #fff;
+        color: $primaryColor;
+        font-weight: 500;
+        font-size: 2rem;
+        font-family: $mulish;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:active {
+            transform: scale(0.9);
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #000, 0 0 25px $primaryColor,
+                // 0 0 50px #000,
+                0 0 50px #000;
+        }
+    }
+}

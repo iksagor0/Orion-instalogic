@@ -1,0 +1,474 @@
+@import "utilities.scss";
+@import "common.scss";
+
+// ======== 1000PX SCREEN ========
+@media only screen and (max-width: 1000px) {
+    #header #top-header .container {
+        .logo-area {
+            width: 24%;
+        }
+
+        .social-media-links {
+            width: 22%;
+        }
+
+    }
+
+    #header #bottom-header .container .navbar {
+        width: 65%;
+
+        ul {
+            padding: 1.5rem 0;
+        }
+
+        ul li a {
+            font-size: 1.6rem;
+        }
+    }
+
+    #banner .banner-content-area h3 {
+        font-size: 3rem;
+        letter-spacing: 8px;
+    }
+
+    #safety-shop .container {
+        padding: 7rem 2rem;
+
+        .image-area {
+            width: 47%;
+        }
+    }
+
+    #quick-links .links-wrapper .links {
+        padding: 2rem;
+    }
+
+    #protection .container {
+        .text-content-area {
+            width: 45%;
+        }
+
+        .image-area {
+            width: 52%;
+        }
+    }
+
+
+    #newsletter .container {
+        display: block;
+        text-align: center;
+
+        p {
+            margin: 2rem 0;
+        }
+    }
+
+    #footer .container {
+        display: block;
+
+        padding: 10rem;
+        padding-bottom: 0;
+
+        .logo-area {
+            padding: 3rem 0 0;
+
+            a {
+                display: block;
+
+                img {
+                    margin: 0 5rem;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    // ============ End of 1000px ============
+}
+
+
+
+
+
+
+/*===============================
+             Tab View
+ ================================*/
+// 850PX SCREEN
+@media only screen and (max-width: 850px) {
+    html {
+        font-size: 58.5%;
+    }
+
+    .nav-active::before {
+        display: none;
+
+    }
+
+    #header #top-header {
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%, #000), color-stop(12%, #c20505));
+
+        .container {
+
+            .social-media-links {
+                display: none;
+            }
+
+            .contact-area {
+                width: 92%;
+
+                .address i {
+                    line-height: 3rem;
+                    margin-right: 1rem;
+                    color: #000;
+                }
+            }
+
+            .sidebar-btn-area {
+                width: 8%;
+                display: grid;
+                place-items: center;
+                z-index: 9999;
+                transition: .5s;
+
+                i {
+                    font-size: 3rem;
+                }
+
+                .fa-solid.fa-xmark {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    #header #bottom-header {
+        height: 100vh;
+        max-width: 300px;
+        width: 100%;
+        background: #000;
+        padding: 5% 0 0;
+        position: fixed;
+        right: -300px;
+        // right: 0;
+        transition: .5s;
+
+        .container {
+            display: block;
+
+            .blur-bg {
+                display: none;
+            }
+
+            .logo-area {
+                width: 100%;
+            }
+
+            //  MAKE IT SIDEBAR
+            .navbar {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                margin-top: 2rem;
+
+                ul {
+                    flex-direction: column;
+
+                    li {
+                        margin: 12% 0;
+
+                        a {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #header.sidebar-active #bottom-header {
+        right: 0;
+    }
+
+    #header.sidebar-active #top-header {
+        .container .sidebar-btn-area .fa-solid.fa-xmark {
+            display: block;
+        }
+
+        .container .sidebar-btn-area .fa-solid.fa-bars-staggered {
+            display: none;
+        }
+    }
+
+    #header.sticky #bottom-header {
+        padding: 5% 0 0;
+
+        .logo-area {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    #products .products-wrapper .side-header h3 {
+        line-height: 7rem;
+    }
+
+    #protection .container {
+        display: block;
+        padding: 10%;
+
+        .text-content-area {
+            width: 100%;
+            text-align: center;
+        }
+
+        .image-area {
+            width: 90%;
+            margin: 5rem auto 0;
+        }
+    }
+
+    // ============ End of 850px ============
+}
+
+
+
+
+
+// 780PX SCREEN
+@media only screen and (max-width: 780px) {
+    #products .products-wrapper .side-header {
+        margin: 0 5rem;
+    }
+
+    #products .products-wrapper .products-slider .product {
+        width: 27rem;
+    }
+
+    #safety-shop .container {
+        display: block;
+
+        .image-area {
+            width: 80%;
+            margin: auto !important;
+        }
+
+        .text-content-area {
+            margin-top: 5rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+
+    // ============ End of 750px ============
+}
+
+
+
+
+
+// 680PX SCREEN
+@media only screen and (max-width: 680px) {
+    p {
+        font-size: 2rem;
+    }
+
+    #header #top-header .container .contact-area .sub-contact-area p,
+    #header #top-header .container .contact-area .sub-contact-area address {
+        font-size: 1.2rem;
+    }
+
+    #header #top-header .container .contact-area {
+        padding: 0.5rem 0;
+    }
+
+    #safety-shop .container {
+        padding: 5rem 2rem;
+    }
+
+    #quick-links .links-wrapper {
+        display: block;
+
+        .links {
+            padding: 10%;
+            width: 100%;
+
+            &:hover,
+            &:active {
+                margin: 0;
+                transform: scale(.9);
+            }
+
+            h4 {
+                font-size: 5rem;
+                margin: 6rem 0;
+            }
+
+            p {
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    #CaC .container {
+        display: block;
+        padding: 5% 10%;
+
+        .common {
+            width: 85%;
+            margin: 7rem auto;
+        }
+    }
+
+    #products .products-wrapper {
+        display: block;
+
+        .side-header {
+            margin: 5rem;
+            transform: none;
+            writing-mode: horizontal-tb;
+
+            h3 {
+                line-height: 9rem;
+            }
+        }
+
+        .products-slider {
+            overflow: visible;
+
+            .product {
+                width: 33%;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    #footer .container {
+        padding: 2rem;
+        // ============ End of 680px ============
+    }
+
+    #copyright .container p {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+// 550PX SCREEN
+@media only screen and (max-width: 550px) {
+    #header #top-header {
+        background: transparent;
+
+        .container .contact-area {
+            display: none;
+
+        }
+
+        .container .sidebar-btn-area {
+            position: fixed;
+            top: 1rem;
+            right: 2rem;
+            width: auto;
+            // color: $primaryColor;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1.5rem;
+
+            i {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    #header.sidebar-active #top-header {
+        .container .sidebar-btn-area {
+            right: 32.5rem;
+        }
+
+    }
+
+    #banner .banner-content-area {
+        h1 {
+            font-size: 8rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+            letter-spacing: 5px;
+        }
+    }
+
+    // ============ End of 550px ============
+}
+
+
+
+
+
+
+
+
+
+/*==================================
+            Mobile View
+ ===================================*/
+@media only screen and (max-width: 460px) {
+    #banner .banner-content-area {
+        h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            line-height: 8rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+    }
+
+    #products .products-wrapper .products-slider .product p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #CaC .container {
+        padding: 0% 0%;
+    }
+
+
+    #footer .info-area {
+        display: block;
+
+        .contacts-area {
+            width: 70%;
+            margin: auto;
+
+            .contact {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+
+    #footer .container .logo-area a img {
+        margin: 0px 4rem;
+    }
+
+    #copyright {
+        padding: 0;
+
+        .container p {
+            font-size: 1.3rem;
+        }
+    }
+
+    // ============ End of 460px ============
+}

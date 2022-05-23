@@ -1,0 +1,172 @@
+// DIALER ICON ANIMATION
+.dialer {
+    position: relative;
+    padding-left: 8px;
+}
+
+.dialer::before,
+.dialer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    animation: ripple 1.5s linear infinite 2s;
+}
+
+.dialer::after {
+    animation: ripple 3s linear infinite 2s
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 .1rem rgba(255, 255, 255, 0.2)
+    }
+
+    100% {
+        box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0)
+    }
+}
+
+
+
+
+
+// EMAIL ICON ANIMATION
+.fa-envelope {
+    animation: tilt-shaking 4s linear infinite;
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(0deg) scale(1.5);
+    }
+
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(-25deg);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1.5);
+    }
+}
+
+
+
+
+
+// LOCATION ICON ANIMATION
+.fa-location-dot {
+    animation: skew-x-shakeng 2s linear infinite;
+}
+
+@keyframes skew-x-shakeng {
+    0% {
+        transform: skewX(-15deg) scale(1.5);
+    }
+
+    5% {
+        transform: skewX(15deg);
+    }
+
+    10% {
+        transform: skewX(-15deg);
+    }
+
+    15% {
+        transform: skewX(15deg);
+    }
+
+    20% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+
+
+
+
+
+// BUTTON HOVER EFFECT
+.anim-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(204, 247, 255, 0.5),
+            transparent);
+
+    animation: left-right 3s linear infinite alternate;
+}
+
+
+@keyframes left-right {
+    0% {
+        left: -200%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}
+
+
+
+
+
+// DOUBLE BUTTON ANIMATION
+.double-btn {
+    animation: black-white 1s linear infinite alternate;
+}
+
+@keyframes black-white {
+    0% {
+        box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.3);
+    }
+}
+
+
+
+
+
+
+// IMAGE FILTER ANIMATION
+.filter-anim {
+    animation: filter 3s linear infinite alternate;
+}
+
+@keyframes filter {
+    0% {
+        filter: saturate(0);
+    }
+
+    100% {
+        filter: saturate(6);
+    }
+}

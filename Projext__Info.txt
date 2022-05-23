@@ -1,0 +1,19 @@
+I got this project as a job assignment in interview process from Instalogic Bangladesh.
+
+--Project Name : ORION (Assignment of Instalogic)
+
+--Developing Day: 2 days (13 April 2022 - 14 April 2020)
+
+--Technologies : HTML, CSS(Sass), Vanilla JS
+
+--Framework / Libraries : No
+
+--Plugin : Font Awesome, Tiny Slider
+
+=== Developer Info {
+    Name: Ibrahim Khalil (IK Sagor)
+    Email: iksagor0@gmail.com
+    Phone: 01832400687
+}
+
+** Note: I completed the Assignment under the pressure of semester final exams and lots of academic assignments and office too. I think it can be more better if I spend more time and play with it.
