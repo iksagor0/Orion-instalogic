@@ -11,7 +11,6 @@
         .social-media-links {
             width: 22%;
         }
-
     }
 
     #header #bottom-header .container .navbar {
@@ -53,7 +52,6 @@
         }
     }
 
-
     #newsletter .container {
         display: block;
         text-align: center;
@@ -86,11 +84,6 @@
     // ============ End of 1000px ============
 }
 
-
-
-
-
-
 /*===============================
              Tab View
  ================================*/
@@ -102,14 +95,18 @@
 
     .nav-active::before {
         display: none;
-
     }
 
     #header #top-header {
-        background: -webkit-gradient(linear, left top, right top, color-stop(50%, #000), color-stop(12%, #c20505));
+        background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            color-stop(50%, #000),
+            color-stop(12%, #c20505)
+        );
 
         .container {
-
             .social-media-links {
                 display: none;
             }
@@ -129,7 +126,7 @@
                 display: grid;
                 place-items: center;
                 z-index: 9999;
-                transition: .5s;
+                transition: 0.5s;
 
                 i {
                     font-size: 3rem;
@@ -142,7 +139,6 @@
         }
     }
 
-
     #header #bottom-header {
         height: 100vh;
         max-width: 300px;
@@ -152,7 +148,7 @@
         position: fixed;
         right: -300px;
         // right: 0;
-        transition: .5s;
+        transition: 0.5s;
 
         .container {
             display: block;
@@ -213,7 +209,6 @@
         }
     }
 
-
     #products .products-wrapper .side-header h3 {
         line-height: 7rem;
     }
@@ -236,19 +231,15 @@
     // ============ End of 850px ============
 }
 
-
-
-
-
 // 780PX SCREEN
 @media only screen and (max-width: 780px) {
     #products .products-wrapper .side-header {
         margin: 0 5rem;
     }
 
-    #products .products-wrapper .products-slider .product {
-        width: 27rem;
-    }
+    // #products .products-wrapper .products-slider .product {
+    //     width: 27rem;
+    // }
 
     #safety-shop .container {
         display: block;
@@ -265,14 +256,8 @@
         }
     }
 
-
-
     // ============ End of 750px ============
 }
-
-
-
-
 
 // 680PX SCREEN
 @media only screen and (max-width: 680px) {
@@ -303,7 +288,7 @@
             &:hover,
             &:active {
                 margin: 0;
-                transform: scale(.9);
+                transform: scale(0.9);
             }
 
             h4 {
@@ -343,10 +328,10 @@
         .products-slider {
             overflow: visible;
 
-            .product {
-                width: 33%;
-                margin: 0 1rem;
-            }
+            // .product {
+            //     width: 33%;
+            //     margin: 0 1rem;
+            // }
         }
     }
 
@@ -360,10 +345,6 @@
     }
 }
 
-
-
-
-
 // 550PX SCREEN
 @media only screen and (max-width: 550px) {
     #header #top-header {
@@ -371,7 +352,6 @@
 
         .container .contact-area {
             display: none;
-
         }
 
         .container .sidebar-btn-area {
@@ -393,7 +373,6 @@
         .container .sidebar-btn-area {
             right: 32.5rem;
         }
-
     }
 
     #banner .banner-content-area {
@@ -409,14 +388,6 @@
 
     // ============ End of 550px ============
 }
-
-
-
-
-
-
-
-
 
 /*==================================
             Mobile View
@@ -443,7 +414,6 @@
     #CaC .container {
         padding: 0% 0%;
     }
-
 
     #footer .info-area {
         display: block;

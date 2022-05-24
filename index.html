@@ -1,385 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="desciption" content="Enter your desciption here..." />
+        <title>ORION : for your safety</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="desciption" content="Enter your desciption here..." />
-    <title>ORION : for your safety</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <!-- Tiny Slider CSS -->
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        /> -->
 
-    <!-- Tiny Slider CSS File -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <!-- Swiper Slider CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/responsive.min.css" />
-</head>
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="stylesheet" href="css/responsive.min.css" />
+    </head>
 
-<body>
-    <!-- ==============================
+    <body>
+        <!-- ==============================
                 HEADER
         ============================== -->
-    <header id="header" class="header">
-        <div class="top-header" id="top-header">
-            <div class="container">
-                <div class="contact-area">
-                    <a href="https://goo.gl/maps/VJNzFdkX8gRhVowJ9" target="_blank" class="sub-contact-area address">
-                        <i class="fw-icon fa-solid fa-location-dot"></i>
-                        <address>
-                            1161 40th Ave NE • Calgary, Alberta
-                        </address>
-                    </a>
+        <header id="header" class="header">
+            <div class="top-header" id="top-header">
+                <div class="container">
+                    <div class="contact-area">
+                        <a
+                            href="https://goo.gl/maps/VJNzFdkX8gRhVowJ9"
+                            target="_blank"
+                            class="sub-contact-area address"
+                        >
+                            <i class="fw-icon fa-solid fa-location-dot"></i>
+                            <address>
+                                1161 40th Ave NE • Calgary, Alberta
+                            </address>
+                        </a>
 
-                    <a href="tel:403-1799" class="sub-contact-area mobile">
-                        <div class="dialer"><i class="fw-icon fa-solid fa-phone"></i></div>
-                        <p>(403) 769 - 1799</p>
-                    </a>
+                        <a href="tel:403-1799" class="sub-contact-area mobile">
+                            <div class="dialer">
+                                <i class="fw-icon fa-solid fa-phone"></i>
+                            </div>
+                            <p>(403) 769 - 1799</p>
+                        </a>
 
-                    <a href="mailto:info@orionsafety.com" class="sub-contact-area email">
-                        <i class="fw-icon fa-solid fa-envelope"></i>
-                        <p>Email Us</p>
-                    </a>
-                </div>
+                        <a
+                            href="mailto:info@orionsafety.com"
+                            class="sub-contact-area email"
+                        >
+                            <i class="fw-icon fa-solid fa-envelope"></i>
+                            <p>Email Us</p>
+                        </a>
+                    </div>
 
-                <div class="social-media-links">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+                    <div class="social-media-links">
+                        <a href="https://www.facebook.com/" target="_blank"
+                            ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                        <a href="https://www.instagram.com/" target="_blank"
+                            ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/" target="_blank"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                    </div>
 
-                <div class="sidebar-btn-area">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                    <i class="fa-solid fa-xmark"></i>
+                    <div class="sidebar-btn-area">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- BOTTOM HEADER  -->
-        <div id="bottom-header" class="bottom-header">
-            <div class="blur-bg"></div>
-            <div class="container">
-                <div class="logo-area">
-                    <a href="index.html"><img src="./images/logo.png" alt="Orion"></a>
+            <!-- BOTTOM HEADER  -->
+            <div id="bottom-header" class="bottom-header">
+                <div class="blur-bg"></div>
+                <div class="container">
+                    <div class="logo-area">
+                        <a href="index.html"
+                            ><img src="./images/logo.png" alt="Orion"
+                        /></a>
+                    </div>
+
+                    <!-- NAVBAR -->
+                    <nav class="navbar">
+                        <ul>
+                            <li class="nav-item">
+                                <a href="#banner" class="banner nav-active"
+                                    >HOME</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#safety-shop" class="safety-shop"
+                                    >ABOUT</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#products" class="products"
+                                    >PRODUCTS</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#CaC" class="CaC">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#protection" class="protection"
+                                    >RESOURCES</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#footer">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <!-- NAVBAR -->
-                <nav class="navbar">
-                    <ul>
-                        <li class="nav-item"><a href="#banner" class="banner nav-active">HOME</a></li>
-                        <li class="nav-item"><a href="#safety-shop" class="safety-shop">ABOUT</a></li>
-                        <li class="nav-item"><a href="#products" class="products">PRODUCTS</a></li>
-                        <li class="nav-item"><a href="#CaC" class="CaC">SERVICES</a></li>
-                        <li class="nav-item"><a href="#protection" class="protection">RESOURCES</a></li>
-                        <li class="nav-item"><a href="#footer">CONTACT</a></li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
-
-
-    <!-- ==============================
+        <!-- ==============================
                 BANNER/HOME
         ============================== -->
-    <section id="banner">
-        <div class="blur-bg"></div>
-        <div class="banner-content-area">
-            <h1>Protection</h1>
-            <h3>Is What We Do Best</h3>
-            <button class="btn anim-btn">Learn More</button>
-        </div>
+        <section id="banner">
+            <div class="blur-bg"></div>
+            <div class="banner-content-area">
+                <h1>Protection</h1>
+                <h3>Is What We Do Best</h3>
+                <button class="btn anim-btn">Learn More</button>
+            </div>
 
-        <div class="banner-bg banner-slider">
-            <img class="slide" src="./images/banner/bg-1.jpg" alt="">
-            <img class="slide active" src="./images/banner/bg-2.jpg" alt="">
-            <img class="slide" src="./images/banner/bg-3.jpg" alt="">
-            <img class="slide" src="./images/banner/bg-4.jpg" alt="">
-        </div>
-    </section>
+            <div class="banner-bg banner-slider swiper">
+                <div class="swiper-wrapper">
+                    <img
+                        class="swiper-slide"
+                        src="./images/banner/bg-1.jpg"
+                        alt=""
+                    />
+                    <img
+                        class="swiper-slide"
+                        src="./images/banner/bg-2.jpg"
+                        alt=""
+                    />
+                    <img
+                        class="swiper-slide"
+                        src="./images/banner/bg-3.jpg"
+                        alt=""
+                    />
+                    <img
+                        class="swiper-slide"
+                        src="./images/banner/bg-4.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
 
-
-
-    <!-- ==============================
+        <!-- ==============================
                 SAFETY SHOP
         ============================== -->
-    <section id="safety-shop">
-        <div class="container">
-            <div class="image-area">
-                <img src="./images/YourOneStopSafetyShop.jpg" alt="YourOneStopSafetyShop" class="filter-anim">
-            </div>
+        <section id="safety-shop">
+            <div class="container">
+                <div class="image-area">
+                    <img
+                        src="./images/YourOneStopSafetyShop.jpg"
+                        alt="YourOneStopSafetyShop"
+                        class="filter-anim"
+                    />
+                </div>
 
-            <div class="text-content-area">
-                <h2 class="black-header">Your One Stop Safety Shop</h2>
-                <p>Accidents or injuries are easily avoided with the right knowledge, advice, and equipment in the
-                    workplace. Orion Safety Ltd. located in Calgary, Alberta is an established Western Canadian leader
-                    in safety products and services since 2007. With over 30 years of safety experience, our experts
-                    work closely with you to ensure you have the tools, knowledge, and procedures needed to ensure the
-                    well-being of your staff.
-                    <br> <br>
-                    Whether it’s personal protective equipment, SCBA, fire prevention, gas detection, fall protection or
-                    emergency rescue gear, safety in your environment is our goal. Give us a call anytime. We appreciate
-                    your business and look forward to hearing from you!</p>
+                <div class="text-content-area">
+                    <h2 class="black-header">Your One Stop Safety Shop</h2>
+                    <p>
+                        Accidents or injuries are easily avoided with the right
+                        knowledge, advice, and equipment in the workplace. Orion
+                        Safety Ltd. located in Calgary, Alberta is an
+                        established Western Canadian leader in safety products
+                        and services since 2007. With over 30 years of safety
+                        experience, our experts work closely with you to ensure
+                        you have the tools, knowledge, and procedures needed to
+                        ensure the well-being of your staff. <br />
+                        <br />
+                        Whether it’s personal protective equipment, SCBA, fire
+                        prevention, gas detection, fall protection or emergency
+                        rescue gear, safety in your environment is our goal.
+                        Give us a call anytime. We appreciate your business and
+                        look forward to hearing from you!
+                    </p>
 
-                <div class="double-btn">
-                    <button class="btn">Learn More</button>
-                    <button class="white-btn">Get in Touch</button>
+                    <div class="double-btn">
+                        <button class="btn">Learn More</button>
+                        <button class="white-btn">Get in Touch</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-
-    <!-- ==============================
+        <!-- ==============================
                 QUICK LINKS
         ============================== -->
-    <section id="quick-links">
-        <div class="links-wrapper">
-            <div class="links sales">
-                <img src="./images/quick-links/icon-sales.png" alt="Sales" class="links-icon">
-                <h4>Sales</h4>
-                <p>We believe in providing our customers with a high quality product at an affordable price. We use only
-                    quality name brand products.</p>
+        <section id="quick-links">
+            <div class="links-wrapper">
+                <div class="links sales">
+                    <img
+                        src="./images/quick-links/icon-sales.png"
+                        alt="Sales"
+                        class="links-icon"
+                    />
+                    <h4>Sales</h4>
+                    <p>
+                        We believe in providing our customers with a high
+                        quality product at an affordable price. We use only
+                        quality name brand products.
+                    </p>
+                </div>
+                <div class="links rentals">
+                    <img
+                        src="./images/quick-links/icon-rentals.png"
+                        alt="Rentals"
+                        class="links-icon"
+                    />
+                    <h4>Rentals</h4>
+                    <p>
+                        We know it is not always economical to purchase new
+                        equipment, that's why we offer a variety of rental
+                        options with daily, weekly and monthly rates.
+                    </p>
+                </div>
+                <div class="links service">
+                    <img
+                        src="./images/quick-links/icon-service.png"
+                        alt="Service"
+                        class="links-icon"
+                    />
+                    <h4>Service</h4>
+                    <p>
+                        We're not just your average safety store! Our experts
+                        know what you're looking for and we can show you how to
+                        use it—properly.
+                    </p>
+                </div>
             </div>
-            <div class="links rentals">
-                <img src="./images/quick-links/icon-rentals.png" alt="Rentals" class="links-icon">
-                <h4>Rentals</h4>
-                <p>We know it is not always economical to purchase new equipment, that's why we offer a variety of
-                    rental options with daily, weekly and monthly rates.</p>
-            </div>
-            <div class="links service">
-                <img src="./images/quick-links/icon-service.png" alt="Service" class="links-icon">
-                <h4>Service</h4>
-                <p>We're not just your average safety store! Our experts know what you're looking for and we can show
-                    you how to use it—properly.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-
-
-    <!-- ==============================
+        <!-- ==============================
          CERTIFICATION AND CALIBRATION
         ============================== -->
-    <section id="CaC">
-        <div class="container">
-            <div class="common certification">
-                <img src="./images/CaC/certification.jpg" alt="">
-                <h4 class="black-header">Certification</h4>
-                <p>We’re not just your average safety store! Our experts know what you’re looking for and we can show
-                    you
-                    how to use it—properly. We also recertify what we sell. Check out our list of what we can recertify
-                    in
-                    our shop.</p>
-                <button class="btn anim-btn">Learn More</button>
+        <section id="CaC">
+            <div class="container">
+                <div class="common certification">
+                    <img src="./images/CaC/certification.jpg" alt="" />
+                    <h4 class="black-header">Certification</h4>
+                    <p>
+                        We’re not just your average safety store! Our experts
+                        know what you’re looking for and we can show you how to
+                        use it—properly. We also recertify what we sell. Check
+                        out our list of what we can recertify in our shop.
+                    </p>
+                    <button class="btn anim-btn">Learn More</button>
+                </div>
+
+                <div class="common calibration">
+                    <img src="./images/CaC/calibration.jpg" alt="" />
+                    <h4 class="black-header">Calibration</h4>
+                    <p>
+                        We’re not just your average safety store! Our experts
+                        know what you’re looking for and we can show you how to
+                        use it—properly. We also recertify what we sell. Check
+                        out our list of what we can recertify in our shop.
+                    </p>
+                    <button class="btn anim-btn">Learn More</button>
+                </div>
             </div>
+        </section>
 
-            <div class="common calibration">
-                <img src="./images/CaC/calibration.jpg" alt="">
-                <h4 class="black-header">Calibration</h4>
-                <p>We’re not just your average safety store! Our experts know what you’re looking for and we can show
-                    you
-                    how to use it—properly. We also recertify what we sell. Check out our list of what we can recertify
-                    in
-                    our shop.</p>
-                <button class="btn anim-btn">Learn More</button>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- ==============================
+        <!-- ==============================
                 PRODUCTS
         ============================== -->
-    <section id="products">
-        <div class="products-wrapper">
-            <div class="side-header">
-                <h3>PRODUCT</h3>
-                <H6>CATEGORIES</H6>
-            </div>
-
-            <div class="products-slider">
-                <div class="product fire-suppression">
-                    <img src="./images/products/product_icon-1.png" alt="fire-suppression">
-                    <h3>Fire Suppression</h3>
-                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
+        <section id="products">
+            <div class="products-wrapper">
+                <div class="side-header">
+                    <h3>PRODUCT</h3>
+                    <h6>CATEGORIES</h6>
                 </div>
 
-                <div class="product first-aid">
-                    <img src="./images/products/product_icon-2.png" alt="first-aid">
-                    <h3>First Aid</h3>
-                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
-                </div>
-
-                <div class="product safety-apparel">
-                    <img src="./images/products/product_icon-3.png" alt="safety apparel">
-                    <h3>Safety Apparel</h3>
-                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
-                </div>
-
-                <div class="product visibility-aids">
-                    <img src="./images/products/product_icon-4.png" alt="visibility-aids">
-                    <h3>Visibility Aids</h3>
-                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="btn-warpper">
-            <button class="btn anim-btn">View More</button>
-        </div>
-    </section>
-
-
-
-    <!-- ==============================
-                PROTECTION
-        ============================== -->
-    <section id="protection">
-        <div class="container">
-            <div class="text-content-area">
-                <h2 class="black-header">Protection Is What We Do Best</h2>
-                <p>Occupational hazards can be controlled and minimized in even the most dangerous situations: we know
-                    what’s needed to outfit your space for hazard detection, safety and response, and are experienced in
-                    a
-                    range of environments, including gasplants, schools, warehouses, factories, retail outlets, mines,
-                    laboratories, and everyday work spaces.
-                    <br> <br>
-                    We work with an elite group of safety equipment suppliers to ensure we can provide you with a range
-                    of
-                    quality products. Over eighty percent of what we sell is made and sourced locally or domestically.
-                    We
-                    also recertify what we sell. Without compromise: the personal safety of yourself and those around
-                    you
-                    deserve nothing less.
-
-                    While our product offering draws customers in, our service is what makes them come back: we have
-                    developed a reputation among clients for our responsiveness, flexibility and expertise.</p>
-
-                <div class="double-btn">
-                    <button class="btn">Learn More</button>
-                    <button class="white-btn">Get in Touch</button>
-                </div>
-
-            </div>
-            <div class="image-area">
-                <img src="./images/ProtectionIsWhatWeDoBest.jpg" alt=" YourOneStopSafetyShop" class="filter-anim">
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- ==============================
-                NEWSLETTER
-        ============================== -->
-
-    <section id="newsletter">
-        <div class="container">
-            <h3>Newsletter</h3>
-
-            <p>Stay connected! Subscribe to our newsletter to stay informed of all the latest products and services.</p>
-
-            <button class="signup-btn">Sign Up </button>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- ==============================
-                FOOTER
-        ============================== -->
-    <footer id="footer">
-        <div class="container">
-            <div class="info-area">
-                <div class="contacts-area">
-                    <div class="contact office">
-                        <h6>Office</h6>
-                        <p>1161 40th Avenue NE
-                            Calgary, Alberta T2E 6M9
+                <!-- <div class="products-slider">
+                    <div class="product fire-suppression">
+                        <img
+                            src="./images/products/product_icon-1.png"
+                            alt="fire-suppression"
+                        />
+                        <h3>Fire Suppression</h3>
+                        <p>
+                            Duis aute irure dolor reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
                     </div>
 
-                    <div class="contact phone">
-                        <h6>phone</h6>
-                        <a href="tel:403769-1799">
-                            <p>(403) 769 - 1799</p>
-                        </a>
+                    <div class="product first-aid">
+                        <img
+                            src="./images/products/product_icon-2.png"
+                            alt="first-aid"
+                        />
+                        <h3>First Aid</h3>
+                        <p>
+                            Duis aute irure dolor reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
                     </div>
 
-                    <div class="contact email">
-                        <h6>Email</h6>
-                        <a href="mailto:info@orionsafety.com">
-                            <p>info@orionsafety.com</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contacts-area">
-                    <div class="contact weeekdays">
-                        <h6>Weeekdays</h6>
-                        <p>8:00am - 4-30pm</p>
+                    <div class="product safety-apparel">
+                        <img
+                            src="./images/products/product_icon-3.png"
+                            alt="safety apparel"
+                        />
+                        <h3>Safety Apparel</h3>
+                        <p>
+                            Duis aute irure dolor reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
                     </div>
 
-                    <div class="contact weekends">
-                        <h6>Weeekends</h6>
-                        <p>Call for hours</p>
+                    <div class="product visibility-aids">
+                        <img
+                            src="./images/products/product_icon-4.png"
+                            alt="visibility-aids"
+                        />
+                        <h3>Visibility Aids</h3>
+                        <p>
+                            Duis aute irure dolor reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
                     </div>
+                </div> -->
 
-                    <div class="contact social">
-                        <h6>Social Media</h6>
-                        <div class="social-media-links">
-                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- SWIPER -->
+                <div class="products-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product fire-suppression">
+                            <img
+                                src="./images/products/product_icon-1.png"
+                                alt="fire-suppression"
+                            />
+                            <h3>Fire Suppression</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product first-aid">
+                            <img
+                                src="./images/products/product_icon-2.png"
+                                alt="first-aid"
+                            />
+                            <h3>First Aid</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product safety-apparel">
+                            <img
+                                src="./images/products/product_icon-3.png"
+                                alt="safety apparel"
+                            />
+                            <h3>Safety Apparel</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product visibility-aids">
+                            <img
+                                src="./images/products/product_icon-4.png"
+                                alt="visibility-aids"
+                            />
+                            <h3>Visibility Aids</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="swiper-slide product fire-suppression">
+                            <img
+                                src="./images/products/product_icon-1.png"
+                                alt="fire-suppression"
+                            />
+                            <h3>Fire Suppression</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product first-aid">
+                            <img
+                                src="./images/products/product_icon-2.png"
+                                alt="first-aid"
+                            />
+                            <h3>First Aid</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product safety-apparel">
+                            <img
+                                src="./images/products/product_icon-3.png"
+                                alt="safety apparel"
+                            />
+                            <h3>Safety Apparel</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product visibility-aids">
+                            <img
+                                src="./images/products/product_icon-4.png"
+                                alt="visibility-aids"
+                            />
+                            <h3>Visibility Aids</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="swiper-slide product fire-suppression">
+                            <img
+                                src="./images/products/product_icon-1.png"
+                                alt="fire-suppression"
+                            />
+                            <h3>Fire Suppression</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product first-aid">
+                            <img
+                                src="./images/products/product_icon-2.png"
+                                alt="first-aid"
+                            />
+                            <h3>First Aid</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product safety-apparel">
+                            <img
+                                src="./images/products/product_icon-3.png"
+                                alt="safety apparel"
+                            />
+                            <h3>Safety Apparel</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide product visibility-aids">
+                            <img
+                                src="./images/products/product_icon-4.png"
+                                alt="visibility-aids"
+                            />
+                            <h3>Visibility Aids</h3>
+                            <p>
+                                Duis aute irure dolor reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="logo-area">
-                <a href="index.html"><img src="./images/logo.png" alt="Logo"></a>
+            <div class="btn-warpper">
+                <button class="btn anim-btn">View More</button>
             </div>
-        </div>
-    </footer>
+        </section>
 
+        <!-- ==============================
+                PROTECTION
+        ============================== -->
+        <section id="protection">
+            <div class="container">
+                <div class="text-content-area">
+                    <h2 class="black-header">Protection Is What We Do Best</h2>
+                    <p>
+                        Occupational hazards can be controlled and minimized in
+                        even the most dangerous situations: we know what’s
+                        needed to outfit your space for hazard detection, safety
+                        and response, and are experienced in a range of
+                        environments, including gasplants, schools, warehouses,
+                        factories, retail outlets, mines, laboratories, and
+                        everyday work spaces. <br />
+                        <br />
+                        We work with an elite group of safety equipment
+                        suppliers to ensure we can provide you with a range of
+                        quality products. Over eighty percent of what we sell is
+                        made and sourced locally or domestically. We also
+                        recertify what we sell. Without compromise: the personal
+                        safety of yourself and those around you deserve nothing
+                        less. While our product offering draws customers in, our
+                        service is what makes them come back: we have developed
+                        a reputation among clients for our responsiveness,
+                        flexibility and expertise.
+                    </p>
 
-    <!-- ==============================
+                    <div class="double-btn">
+                        <button class="btn">Learn More</button>
+                        <button class="white-btn">Get in Touch</button>
+                    </div>
+                </div>
+                <div class="image-area">
+                    <img
+                        src="./images/ProtectionIsWhatWeDoBest.jpg"
+                        alt=" YourOneStopSafetyShop"
+                        class="filter-anim"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+                NEWSLETTER
+        ============================== -->
+
+        <section id="newsletter">
+            <div class="container">
+                <h3>Newsletter</h3>
+
+                <p>
+                    Stay connected! Subscribe to our newsletter to stay informed
+                    of all the latest products and services.
+                </p>
+
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </section>
+
+        <!-- ==============================
+                FOOTER
+        ============================== -->
+        <footer id="footer">
+            <div class="container">
+                <div class="info-area">
+                    <div class="contacts-area">
+                        <div class="contact office">
+                            <h6>Office</h6>
+                            <p>1161 40th Avenue NE Calgary, Alberta T2E 6M9</p>
+                        </div>
+
+                        <div class="contact phone">
+                            <h6>phone</h6>
+                            <a href="tel:403769-1799">
+                                <p>(403) 769 - 1799</p>
+                            </a>
+                        </div>
+
+                        <div class="contact email">
+                            <h6>Email</h6>
+                            <a href="mailto:info@orionsafety.com">
+                                <p>info@orionsafety.com</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contacts-area">
+                        <div class="contact weeekdays">
+                            <h6>Weeekdays</h6>
+                            <p>8:00am - 4-30pm</p>
+                        </div>
+
+                        <div class="contact weekends">
+                            <h6>Weeekends</h6>
+                            <p>Call for hours</p>
+                        </div>
+
+                        <div class="contact social">
+                            <h6>Social Media</h6>
+                            <div class="social-media-links">
+                                <a href="https://www.facebook.com/"
+                                    ><i class="fa-brands fa-facebook-f"></i
+                                ></a>
+                                <a href="https://www.instagram.com/"
+                                    ><i class="fa-brands fa-instagram"></i
+                                ></a>
+                                <a href="https://www.linkedin.com/"
+                                    ><i class="fa-brands fa-linkedin-in"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-area">
+                    <a href="index.html"
+                        ><img src="./images/logo.png" alt="Logo"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ==============================
                 COPYRIGHT
         ============================== -->
-    <div id="copyright">
-        <div class="container">
-            <p>Powered by Instalogic Inc.</p>
-            <p>© 2020 Orion Safety Equipment Ltd.</p>
+        <div id="copyright">
+            <div class="container">
+                <p>Powered by Instalogic Inc.</p>
+                <p>© 2020 Orion Safety Equipment Ltd.</p>
+            </div>
         </div>
-    </div>
 
-
-
-
-
-
-
-    <!-- ==============================
-        ======== JAVASCRIPT FILES ========
+        <!-- ==============================
+                 JAVASCRIPT FILES 
         ============================== -->
-    <!-- Tiny Slider JS file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <!-- Tiny Slider JS file -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
 
-    <!-- Main JS -->
-    <script src="./js/main.js"></script>
-</body>
+        <!-- Swiper Slider JS File-->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+        <!-- Main JS -->
+        <script src="./js/main.js"></script>
+    </body>
 </html>
